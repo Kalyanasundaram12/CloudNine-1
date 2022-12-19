@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="~/Desktop/CloudNine/static/logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <title>Calamity Support</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <script defer src="Validate.js"></script>
+        <title>Calamity support</title>
+      </head>
+      <body>
+        <nav>
+            <h3>Improved Disaster Response with Machine Learning</h3>
+            <h3 text-align="right">Calamity Support</h3>
+          </nav>
+          <h1 id="h1">Request immediate support and get help instantly</h1>
+          <form class="form" name="sos" id="sos" action="/guide" method="POST">
+            <div class="name">
+              <h1 id="fullname">Full name:</h1>
+              <input type="text" id="name" name="name"><br>
+              <h1 id="distress">Cause of Distress:</h1>
+              <select name="disaster" id="calamity" form="sos" required>
+                  <option value="Floods"></option>
+                  <option value="Floods">Floods</option>
+                  <option value="Earthquake">Earthquake</option>
+                  <option value="Drought">Drought</option>
+                  <option value="Plague">Plague</option>
+                  <option value="Other">Other</option>
+              </select>
+              <h2 id="resources">Specify Resources:</h2>
+              <label for="FW">Food and Water:</label><br>
+              <input type="number" min="0" name="FW" id="FW"><br>
+              <label for="Med">Medicine:</label><br>
+              <input type="number" min="0" name="Med" id="Med"><br>
+              <label for="Cloth">Clothing and Cover:</label><br>
+              <input type="number" min="0" name="Cloth" id="Cloth"><br>
+              <br>
+              <label for="note"><h3>Add a personal note</h3></label><br>
+              <input type="text" name="note" id="note">
+            </div>
+              <br>
+              <input class="btn" type="image" src="https://cdn-icons-png.flaticon.com/512/1403/1403474.png" height="100px" formtarget="_blank">
+            </form><br>
+            <footer id="footer">
+              <p id="p1">
+                Model created for GCCP Project | <a href = "mailto: cloudnine.gcp@gmail.com">Reach us by mail</a>
+              </p>
+              <br>
+              <p id="p2">
+                Copyright &copy; All rights reserved.
+              </p>
+            </footer>
+      </body>
+      </html>
+</html>
